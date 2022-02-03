@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="outer-box">
+      <div class="parent-wrapper">
+        <h1 class="contact-us">Contact Us</h1>
+        <main>
+          <div class="left">
+            <i class="fas fa-phone contact-info"></i>
+            <p class="contact-info">18009798645</p>
+            <i class="fas fa-envelope contact-info"></i>
+            <p class="contact-info">onemarketingstudios@gmail.com</p>
+            <div class="social-parent">
+              <div class="social-container">
+                <a href="#" class="fa fa-facebook social-media"></a>
+                <a href="#" class="fa fa-instagram social-media"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="right" id="error">
+            <form action="/" class="form-wrap" id="form" method="get">
+              <label class="name-label" for="name">Full Name</label>
+              <input
+                type="text"
+                class="no-outline error"
+                id="name"
+                placeholder="enter your name"
+              />
+              <p class="error" id="name-error">* Name is required!</p>
+              <label class="email-label" for="email">Email</label>
+              <input
+                type="text"
+                class="no-outline error"
+                id="email"
+                placeholder="enter your email"
+              />
+              <p class="error" id="email-error">* Please enter valid email</p>
+              <label for="message" class="message-label">Message</label>
+              <textarea
+                name="message"
+                class="message no-outline"
+                placeholder="enter your messsage ..."
+                maxlength="500"
+                minlength="1"
+              ></textarea>
+              <button class="form-btn" id="email-btn" type="submit" rows="5">
+                Send
+              </button>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
