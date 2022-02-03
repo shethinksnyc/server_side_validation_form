@@ -1,0 +1,26 @@
+{
+  "name": "form-server-side",
+  "version": "1.0.0",
+  "description": "Using nodemailer to send email form test app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shethinksnyc/server_side_validation_form.git"
+  },
+  "author": "Diaa P. Restrepo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shethinksnyc/server_side_validation_form/issues"
+  },
+  "homepage": "https://github.com/shethinksnyc/server_side_validation_form#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "nodemailer": "^6.7.2",
+    "protonmail-api": "^2.1.0"
+  }
+}

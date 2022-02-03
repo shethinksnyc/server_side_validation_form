@@ -22,7 +22,7 @@
       rgba(34, 32, 71, 0.9),
       rgba(34, 32, 71, 0.9)
     ),
-    /* bottom, image */ url(../background.jpg);
+    /* bottom, image */ url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;

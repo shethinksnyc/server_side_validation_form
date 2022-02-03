@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex Box</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="public/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,6 +27,7 @@
     <div class="outer-box">
       <div class="parent-wrapper">
         <h1 class="contact-us">Contact Us</h1>
+        {{msg}}
         <main>
           <div class="left">
             <i class="fas fa-phone contact-info"></i>
@@ -43,13 +43,14 @@
           </div>
 
           <div class="right" id="error">
-            <form action="/" class="form-wrap" id="form" method="get">
+            <form action="send" class="form-wrap" id="form" method="POST">
               <label class="name-label" for="name">Full Name</label>
               <input
                 type="text"
                 class="no-outline error"
                 id="name"
                 placeholder="enter your name"
+                name="name"
               />
               <p class="error" id="name-error">* Name is required!</p>
               <label class="email-label" for="email">Email</label>
@@ -58,6 +59,7 @@
                 class="no-outline error"
                 id="email"
                 placeholder="enter your email"
+                name="email"
               />
               <p class="error" id="email-error">* Please enter valid email</p>
               <label for="message" class="message-label">Message</label>
