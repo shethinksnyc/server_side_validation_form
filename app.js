@@ -39,9 +39,11 @@ app.post("/send", (req, res) => {
   </ul>
   <h3>Message: <p>${req.body.message}</p></h3>
 `;
+
+  res.send(output);
 });
 
-(async () => {
+const mailerFunc = async () => {
   const pm = await ProtonMail.connect({
     username: "oneMarketingStudios@protonmail.com",
     password: "Bullshit6868$",
@@ -54,8 +56,9 @@ app.post("/send", (req, res) => {
   });
 
   pm.close();
-})();
+};
 
+mailerFunc();
 //   setupemail data with unicode
 // listen on a port
 app.listen(3000, () => console.log("Server started..."));
